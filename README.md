@@ -41,7 +41,7 @@ O sistema utiliza o microfone embutido para detectar níveis sonoros elevados. A
 - **Visual Studio Code** com a extensão para Raspberry Pi Pico.
 - **Raspberry Pi Pico C/C++ SDK**.
 - **CMake** e **GNU Arm Embedded Toolchain**.
-- Um cliente MQTT (como o app **MQTT Dash**) para receber os alertas no celular.
+- Um cliente MQTT (como o app **MQTT ClIENT**) para receber os alertas no celular.
 
 ---
 
@@ -63,13 +63,13 @@ O projeto foi construído de forma incremental. Cada pasta no diretório `Fases/
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
+    git clone https://github.com/devlavanere/SMAIV_PICO_W.git
     cd [NOME_DO_REPOSITORIO]
     ```
 
 2.  **Navegue para a pasta da versão final:**
     ```bash
-    cd Fases/Fase_5_Sistema_Integrado_DualCore
+    cd Fases_Projeto/Fase_05/smaiv_pico_w_project_fase_05
     ```
 
 3.  **Configure suas credenciais:**
@@ -87,16 +87,28 @@ O projeto foi construído de forma incremental. Cada pasta no diretório `Fases/
 
 5.  **Carregue o firmware:**
     - Pressione e segure o botão `BOOTSEL` na sua Pico W e conecte-a ao computador.
-    - Arraste o arquivo `smaiv_fase_5.uf2` (gerado na pasta `build`) para o drive da Pico.
+    - Depois só apertar Run no Vs Code ou no plugin do SDK da PICO para carregar o programa no microlador RP2040.
 
 ---
 
-## 🔮 Trabalhos Futuros
+## 🔮 Trabalhos Futuros e Evolução do Ecossistema SMAIV
 
-- **Inteligência Artificial (TinyML):** Implementar um modelo de classificação de áudio para diferenciar sons específicos (ex: choro de bebê, quebra de vidro).
-- **Segurança:** Adicionar criptografia TLS à comunicação MQTT.
-- **Aplicativo Móvel:** Desenvolver um aplicativo dedicado para uma melhor experiência do usuário.
-- **Hardware Customizado:** Projetar uma PCB dedicada para um produto final compacto.
+O protótipo atual estabelece uma base sólida, mas seu verdadeiro potencial reside na evolução contínua. As direções futuras se concentram em tornar o sistema mais inteligente, seguro, acessível e expansível.
+
+### 1. Inteligência Artificial Embarcada (TinyML)
+A evolução mais impactante seria migrar da detecção de volume (RMS) para o **reconhecimento de padrões sonoros**.
+- **Implementação:** Treinar e implantar um modelo de Machine Learning (TinyML) diretamente no microcontrolador.
+- **Benefício:** Permitiria ao SMAIV diferenciar sons específicos, como **choro de bebê**, tosse, quebra de vidro ou até mesmo palavras de comando, reduzindo drasticamente os falsos positivos e tornando os alertas contextualmente relevantes.
+
+### 2. Acessibilidade para Deficientes Auditivos
+Expandir o ecossistema SMAIV para atender a cuidadores com deficiência auditiva, como mães e pais surdos.
+- **Implementação:** Desenvolver um **dispositivo receptor complementar**. Este segundo dispositivo (que poderia ser um bracelete vibratório, um pequeno display de mesa ou um sinalizador luminoso) se comunicaria diretamente com a unidade principal do SMAIV (via Wi-Fi, Bluetooth ou outro rádio de baixo consumo).
+- **Benefício:** Quando o SMAIV detectasse um choro, ele enviaria um sinal para o dispositivo receptor, que traduziria o alerta sonoro em um **sinal tátil (vibração) ou visual (luzes piscantes)**. Isso criaria uma solução de monitoramento verdadeiramente inclusiva, garantindo que o alerta seja percebido por todos.
+
+### 3. Aplicativo Móvel Dedicado e Segurança
+Aprimorar a experiência de monitoramento remoto e a segurança do sistema.
+- **Aplicativo Móvel:** Desenvolver uma aplicação dedicada para Android e iOS que ofereça uma interface amigável para receber notificações push, visualizar um histórico de eventos, ver o nível de som em tempo real e configurar o dispositivo remotamente.
+- **Segurança (TLS):** Implementar criptografia **TLS (Transport Layer Security)** na comunicação MQTT para garantir que todos os dados trocados entre o dispositivo e os cuidadores sejam privados e seguros.
 
 ---
 

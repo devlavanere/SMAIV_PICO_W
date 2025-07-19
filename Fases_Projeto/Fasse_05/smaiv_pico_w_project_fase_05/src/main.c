@@ -57,7 +57,7 @@
 #include "modules/mqtt_comm/mqtt_comm.h"
 
 // =================================================================================
-// main() - Orquestrador do Sistema SMAIAS
+// main() - Orquestrador do Sistema SMAIV
 // =================================================================================
 
 int main() {

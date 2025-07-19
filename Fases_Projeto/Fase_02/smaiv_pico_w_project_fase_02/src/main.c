@@ -98,7 +98,7 @@ int main() {
             gpio_put(RGB_G_PIN, 1); // Liga o LED Verde
         }
 
-        sleep_ms(100); // O loop roda aproximadamente 10 vezes por segundo
+        sleep_ms(100);
     }
       
     return 0;

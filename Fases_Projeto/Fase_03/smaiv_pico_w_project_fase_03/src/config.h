@@ -31,6 +31,6 @@
 
 // Matriz de LEDs WS2812B (NeoPixel)
 #define WS2812_PIN 7
-#define WS2812_NUM_LEDS 16 // Matriz 4x4
+#define WS2812_NUM_LEDS 25 // Matriz 5x5
 
 #endif

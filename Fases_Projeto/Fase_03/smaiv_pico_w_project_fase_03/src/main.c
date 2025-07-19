@@ -25,7 +25,7 @@ static screen_t current_screen = SCREEN_MAIN;
 static float sound_threshold = 150.0f; // Limiar agora é uma variável para podermos ajustá-la
 
 // -- Parâmetros de Áudio --
-#define SAMPLE_COUNT 256 // Número de amostras para calcular o RMS. Um bom equilíbrio entre velocidade e escalabilidade.
+#define SAMPLE_COUNT 256 // Número de amostras para calcular o RMS.
 
 // --- Objeto do Display ---
 static ssd1306_t disp;

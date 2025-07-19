@@ -51,11 +51,11 @@ O sistema utiliza o microfone embutido para detectar níveis sonoros elevados. A
 
 O projeto foi construído de forma incremental. Cada pasta no diretório `Fases/` contém uma versão funcional e autocontida do projeto em um determinado estágio, com seu próprio `README.md` detalhado.
 
-- **[Fase 1: Validação de Hardware](./Fases_Prjeto/Fase_1_Validacao_Hardware/README.md):** Teste interativo de todos os componentes de hardware.
-- **[Fase 2: Núcleo de Monitoramento](./Fases_Prjeto/Fase_2_Nucleo_Monitoramento/README.md):** Implementação da detecção de som via RMS.
-- **[Fase 3: Interface com o Usuário](./Fases_Prjeto/Fase_3_Interface_Usuario/README.md):** Adição do display OLED e controles para autonomia.
-- **[Fase 4: Conectividade MQTT](./Fases_Prjeto/Fase_4_Conectividade_MQTT/README.md):** Implementação do alerta remoto via Wi-Fi.
-- **[Fase 5: Sistema Integrado e Dual-Core](./Fases_Prjeto/Fase_5_Sistema_Integrado_DualCore/README.md):** Refatoração para arquitetura modular e otimização com uso dos dois núcleos.
+- **[Fase 1: Validação de Hardware](./Fases_Prjeto/Fase_01/smaiv_pico_w_project_fase_01/README.md):** Teste interativo de todos os componentes de hardware.
+- **[Fase 2: Núcleo de Monitoramento](./Fases_Prjeto/Fase_01/smaiv_pico_w_project_fase_02/README.md):** Implementação da detecção de som via RMS.
+- **[Fase 3: Interface com o Usuário](./Fases_Prjeto/Fase_01/smaiv_pico_w_project_fase_03/README.md):** Adição do display OLED e controles para autonomia.
+- **[Fase 4: Conectividade MQTT](./Fases_Prjeto/Fase_01/smaiv_pico_w_project_fase_04/README.md):** Implementação do alerta remoto via Wi-Fi.
+- **[Fase 5: Sistema Integrado e Dual-Core](./Fases_Prjeto/Fase_01/smaiv_pico_w_project_fase_05/README.md):** Refatoração para arquitetura modular e otimização com uso dos dois núcleos.
 
 ---
 

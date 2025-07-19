@@ -34,11 +34,9 @@ O desenvolvimento do projeto está sendo realizado em fases. O status atual é:
 
 - [X] **Fase 1: Testes de Hardware (Concluída)**
   - *Descrição:* Todos os periféricos da placa BitDogLab (LEDs, botões, joystick, buzzer, OLED, microfone) foram testados e validados de forma interativa.
-  - *Tag no Git:* `v1.0-fase1`
 
 - [X] **Fase 2: Núcleo de Monitoramento (Concluída)**
   - *Descrição:* O sistema agora lê continuamente o microfone, calcula o nível de ruído ambiente (RMS) e o compara com um limiar pré-definido. Um alerta visual (LED RGB) é ativado quando o limiar é excedido.
-  - *Tag no Git:* `v2.0-fase2`
 
 - [ ] **Fase 3: Interface do Usuário (UI)**
   - *Descrição:* Desenvolvimento da interface no display OLED para visualização de status e configuração do limiar de sensibilidade através do joystick.

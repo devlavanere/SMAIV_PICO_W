@@ -18,7 +18,7 @@ Esta versão representa o protótipo completo, com todas as funcionalidades inte
 
 2.  **Lógica de Alarme com Travamento (*Latching*):** O dispositivo se comporta como um sistema de segurança real. Uma vez disparado, o alarme permanece ativo até ser reconhecido e silenciado manualmente pelo usuário (pressionando o Botão A), garantindo que nenhum evento seja perdido.
 
-3.  **Período de Silêncio Pós-Alerta:** Após um alarme ser silenciado, o sistema entra em um período de "graça" de 5 segundos, durante o qual novos alertas são suprimidos. Isso evita reativações indesejadas causadas pelo mesmo evento sonoro.
+3.  **Período de Silêncio Pós-Alerta:** Após um alarme ser silenciado, o sistema entra em um período de 5 segundos, durante o qual novos alertas são suprimidos. Isso evita reativações indesejadas causadas pelo mesmo evento sonoro.
 
 ---
 
